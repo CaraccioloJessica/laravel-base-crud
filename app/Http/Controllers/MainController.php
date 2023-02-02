@@ -14,7 +14,7 @@ class MainController extends Controller
 
     $data = [
 
-      'degrees' => $saints
+      'saints' => $saints
     ];
 
     return view('home', $data);
