@@ -11,8 +11,7 @@ class Saints extends Model
 
   private $id;
   private $name;
-  private $level;
-  private $address;
-  private $email;
-  private $website;
+  private $place_of_birth;
+  private $given_blessing;
+  private $miracles_number;
 }
