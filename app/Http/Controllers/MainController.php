@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Saints;
+use App\Models\Saint;
 
 class MainController extends Controller
 {
   public function home()
   {
-    $saints = Saints::all();
+    $saints = Saint::all();
 
     $data = [
 
