@@ -1,1 +1,25 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+// homepage
+body {
+  background-color: antiquewhite;
+
+  h1 {
+    color: #493200;
+  }
+
+  ul {
+    list-style: none;
+
+    .card {
+      width: 160px;
+      height: 160px;
+      background-color: #fffaf6;
+
+      a {
+        text-decoration: none;
+        color: #493200;
+      }
+    }
+  }
+}
