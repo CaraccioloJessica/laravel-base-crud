@@ -12,11 +12,11 @@ class MainController extends Controller
   {
     $saints = Saint::all();
 
-    $data = [
-      'saints' => $saints
-    ];
+    // $data = [
+    //   'saints' => $saints
+    // ];
 
-    return view('home', $data);
+    return view('home', compact('saints'));
   }
 
   public function show($id)
@@ -28,5 +28,13 @@ class MainController extends Controller
     ];
 
     return view('saint', $data);
+  }
+
+  public function destroy($id)
+  {
+    $saint = Saint::find($id);
+    $saint->delete();
+
+    return redirect()->route('home');
   }
 }

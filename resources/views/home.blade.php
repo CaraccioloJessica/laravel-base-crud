@@ -8,6 +8,7 @@
         Nome: {{$saint -> name}} <br>
         Miracoli: {{$saint -> miracles_number}}
       </a>
+      <a class="text-danger" href="{{route('saint.destroy', ['id' => $saint -> id])}}">&cross;</a>
     </li>       
     @endforeach
   </ul>
