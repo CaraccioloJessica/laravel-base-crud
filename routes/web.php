@@ -3,8 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 
+// index
 Route::get('/', [MainController::class, 'home'])->name('home');
 
-Route::get('/saint/{id}', [MainController::class, 'show']);
+// show
+Route::get('/saint/show/{id}', [MainController::class, 'show'])->name('saint.show');
 
-Route::get('/saint/{id}/destroy', [MainController::class, 'destroy'])->name('saint.destroy');
+// destroy
+Route::get('/saint/destroy/{id}', [MainController::class, 'destroy'])->name('saint.destroy');
+
+// create
+Route::get('/saint/create', [MainController::class, 'create'])->name('saint.create');
