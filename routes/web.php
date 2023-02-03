@@ -14,3 +14,6 @@ Route::get('/saint/destroy/{id}', [MainController::class, 'destroy'])->name('sai
 
 // create
 Route::get('/saint/create', [MainController::class, 'create'])->name('saint.create');
+
+// post
+Route::post('/saint/store', [MainController::class, 'store'])->name('saint.store');

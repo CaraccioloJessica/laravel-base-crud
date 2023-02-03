@@ -34,3 +34,53 @@ body {
     text-decoration: underline;
   }
 }
+
+// form
+form {
+  max-width: 420px;
+  margin: 50px auto;
+
+  .feedback-input {
+    color: #070707;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: none;
+    line-height: 22px;
+    background-color: #F0EFEE;
+    border: 1px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    outline: 0;
+
+    &:focus {
+      border: 1px solid #CC4949;
+    }
+  }
+
+
+  [type="submit"] {
+    width: 100%;
+    background: #EE3A43;
+    border-radius: none;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    font-size: 14px;
+
+    &:hover {
+      background: #CC4949;
+    }
+  }
+
+}

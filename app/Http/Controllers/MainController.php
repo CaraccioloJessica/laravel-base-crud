@@ -46,4 +46,10 @@ class MainController extends Controller
   {
     return view('create');
   }
+
+  public function store()
+  {
+    var_dump(true);
+    die();
+  }
 }
