@@ -1,7 +1,7 @@
 @extends('layout.main-layout')
 
 @section('content')
-  <a href="{{route('saint.create')}}">Create Saint</a>
+  <h2 class="text-center py-4"><a href="{{route('saint.create')}}">Create Saint</a></h2>
 
   <ul class="container d-flex flex-wrap justify-content-between">
     @foreach ($saints as $saint)

@@ -7,6 +7,14 @@ body {
   h1,
   h2 {
     color: #493200;
+
+    a {
+      color: #567a00;
+
+      &:hover {
+        color: #90ce00;
+      }
+    }
   }
 
   ul {
@@ -48,7 +56,7 @@ form {
     border-radius: none;
     line-height: 22px;
     background-color: #F0EFEE;
-    border: 1px solid #CC6666;
+    border: 1px solid #e6622e;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 10px;
@@ -57,14 +65,14 @@ form {
     outline: 0;
 
     &:focus {
-      border: 1px solid #CC4949;
+      border: 1px solid #cc5d49;
     }
   }
 
 
   [type="submit"] {
     width: 100%;
-    background: #EE3A43;
+    background: #e6622e;
     border-radius: none;
     border: 0;
     cursor: pointer;
@@ -79,7 +87,7 @@ form {
     font-size: 14px;
 
     &:hover {
-      background: #CC4949;
+      background: #cc5d49;
     }
   }
 

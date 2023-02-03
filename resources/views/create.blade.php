@@ -1,7 +1,7 @@
 @extends('layout.main-layout')
 
 @section('content')
-  <h1 class="text-center">Create new saint</h1>
+  <h1 class="text-center text-success">Create new saint</h1>
 
   <form method="POST" action="{{route('saint.store')}}"> 
     @csrf
