@@ -5,16 +5,16 @@
 
   <form method="POST" action="{{route('saint.store')}}"> 
     @csrf
-    
+
     <input type="text" name="name" class="feedback-input" placeholder="Name" /> 
 
     <input type="text" name="place_of_birth" class="feedback-input" placeholder="Place of birth" />
 
-    <input type="date" name="blessing_date" 
-    class="feedback-input"
-    placeholder="Blessing date"></input>
+    <label for="blessing_date">Blessing date</label>
+    <input type="date" name="given_blessing" 
+    class="feedback-input"></input>
 
-    <input type="number" name="miracle_number"
+    <input type="number" name="miracles_number"
     class="feedback-input" placeholder="Miracle number"></input>
 
     <input type="submit" value="CREATE"/>

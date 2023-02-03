@@ -11,7 +11,7 @@ class MainController extends Controller
   // index
   public function home()
   {
-    $saints = Saint::all();
+    $saints = Saint::orderBy('created_at', 'DESC')->get();
 
     // $data = [
     //   'saints' => $saints
@@ -47,9 +47,19 @@ class MainController extends Controller
     return view('create');
   }
 
-  public function store()
+  public function store(Request $request)
   {
-    var_dump(true);
-    die();
+    $data = $request->all();
+
+    $saint = new Saint();
+
+    $saint->name = $data['name'];
+    $saint->place_of_birth = $data['place_of_birth'];
+    $saint->given_blessing = $data['given_blessing'];
+    $saint->miracles_number = $data['miracles_number'];
+
+    $saint->save();
+
+    return redirect()->route('home');
   }
 }
