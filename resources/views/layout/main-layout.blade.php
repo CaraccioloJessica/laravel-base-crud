@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1 class="text-center">Saints
+    <h1 class="text-center"><a href="{{route('home')}}">Saints</a>
     </h1>
   </header>
     @yield('content')

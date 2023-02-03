@@ -4,10 +4,18 @@
 body {
   background-color: antiquewhite;
 
-  h1,
-  h2 {
-    color: #493200;
+  h1 {
+    a {
+      color: #493200;
+      text-decoration: none;
 
+      &:hover {
+        color: #8f6200;
+      }
+    }
+  }
+
+  h2 {
     a {
       color: #567a00;
 
